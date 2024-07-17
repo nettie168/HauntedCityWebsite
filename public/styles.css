@@ -102,6 +102,14 @@ h1#title{
   }
 }
 
+@media (min-width: 1200px) {
+  #title-card img{
+    width: 60%;
+  }
+}
+
+
+
 
 
 .social_icon, .menu{
