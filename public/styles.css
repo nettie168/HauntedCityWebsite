@@ -1,0 +1,149 @@
+/* 
+Colours
+Grey: #6e6b6e
+Purple: #692b7b
+*/
+
+body{
+    background-color: black;
+    color: white;
+    /*font-family: Fulbo;*/
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+hr{
+    width: 25%;
+    margin: auto;
+    border: 2px solid white; /*#692b7b;*/
+    border-radius: 2px;
+}
+
+
+.full-screen {
+    min-height: 100vh;
+  }
+
+.purple{
+    background-image: url("derby3_purple.jpg");
+   background-color: #692b7b;
+}
+
+.info-card{
+    margin-bottom: 50px;
+  }
+
+.info-card img{
+   margin-top: 20px;
+   margin-bottom: 10px;
+   width: 80%;
+  }
+
+  .info-card h2{
+    padding: 20px;
+  }
+
+.img-card{
+    border-radius: 5px;
+    border: 5px solid #692b7b;
+}
+
+/*HomePage*/
+h1#title{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: clear;
+    font-size: 3rem;
+    text-shadow: 1px 1px black;
+  }
+
+  h2#subtitle{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-size: 2rem;
+    text-shadow: 1px 1px black;
+  }
+
+#title-card{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#title-card img{
+    width: 60%;
+}
+
+.social_icon, .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 1.4em;
+}
+
+.social_icon, .menu, a{
+    color: white;
+    margin: 0 10px;
+}
+
+.social_icon, .menu, a:hover{
+    color: #692b7b;
+}
+
+/*Footer*/
+#footer-div{
+ background-color: #692b7b;
+ padding-top: 40px;
+}
+
+  #footer-div .social_icon,
+#footer-div .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-div .social_icon li,
+#footer-div .menu li {
+  list-style: none;
+}
+#footer-div .social_icon li a {
+  font-size: 1.5em;
+  color: #ccc;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+#footer-div .social_icon li a:hover {
+  transform: translateY(-15px);
+  color: #fff;
+}
+
+#footer-div .menu li a {
+  font-size: 1.2em;
+  color: #ccc;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  padding: 10px;
+}
+#footer-div .menu li a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+#footer-div #copyright{
+  font-size: 1rem;
+  margin: 0 10px;
+  text-align: end;
+  color: #ccc;
+  opacity: 0.9;
+  padding: 10px;
+}
