@@ -74,7 +74,13 @@ h1#title{
 }
 
 #title-card img{
+    width: 90%;
+}
+
+@media (min-width: 576px) {
+  #title-card img{
     width: 60%;
+  }
 }
 
 .social_icon, .menu{
