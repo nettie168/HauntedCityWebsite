@@ -5,43 +5,53 @@ Purple: #692b7b
 */
 
 body{
-    background-color: black;
-    color: white;
-    /*font-family: Fulbo;*/
+  background-color: black;
+  color: white;
+  /*font-family: Fulbo;*/
+}
+
+h2{
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+  font-style: italic;
+}
+
+h3{
+  margin-top: 10px;
 }
 
 p{
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 hr{
-    width: 25%;
-    margin: auto;
-    border: 2px solid white; /*#692b7b;*/
-    border-radius: 2px;
+  width: 25%;
+  margin: auto;
+  border: 2px solid white; /*#692b7b;*/
+  border-radius: 2px;
 }
 
 
 
 .full-screen {
-    min-height: 100vh;
+  min-height: 100vh;
   }
 
 .purple{
-    background-image: url("derby3_purple.jpg");
-   background-color: #692b7b;
+  background-image: url("derby3_purple.jpg");
+  background-color: #692b7b;
 }
 
 .info-card{
-    padding-top: 10px;
-    margin-bottom: 50px;
-  }
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
 
 .info-card img{
-   margin-top: 20px;
-   margin-bottom: 10px;
-   width: 80%;
-  }
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+}
 
   @media (min-width: 992px) {
     .info-card img{
@@ -58,21 +68,28 @@ hr{
     border: 3px solid #692b7b;
 }
 
+.div-img{
+  background-image: url("derby2_3purple.jpg");
+  background-size: 150%;
+  background-repeat: no-repeat;
+
+}
+
 /*HomePage*/
 h1#title{
     text-align: center;
     padding-top: 50px;
     padding-bottom: clear;
-    font-size: 3rem;
-    text-shadow: 1px 1px black;
-  }
+    font-size: 4rem;
+    text-shadow: 2px 4px black;
+}
 
   h2#subtitle{
     text-align: center;
     padding-top: 25px;
     padding-bottom: 50px;
-    font-size: 2rem;
-    text-shadow: 1px 1px black;
+    font-size: 2.5rem;
+    text-shadow: 2px 4px black;
   }
 
 #title-card{
@@ -81,35 +98,49 @@ h1#title{
 }
 
 #title-card img{
-    width: 90%;
+    width: 60%;
 }
 
 @media (min-width: 576px) {
-  #title-card img{
-    width: 60%;
-  }
-}
-
-@media (min-width: 768px) {
   #title-card img{
     width: 40%;
   }
 }
 
+@media (min-width: 768px) {
+  #title-card img{
+    width: 35%;
+  }
+}
+
 @media (min-width: 992px) {
   #title-card img{
-    width: 80%;
+    width: 30%;
   }
 }
 
 @media (min-width: 1200px) {
   #title-card img{
-    width: 60%;
+    width: 50%;
   }
 }
 
+#team-card{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#team-card img{
+  width: 50%;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
 
 
+#junior-star{
+  padding-top: 50px;
+  font-size: 1rem;
+}
 
 
 .social_icon, .menu{
@@ -178,7 +209,7 @@ h1#title{
 #footer-div #copyright{
   font-size: 1rem;
   margin: 0 10px;
-  text-align: end;
+  text-align: start;
   color: #ccc;
   opacity: 0.9;
   padding: 10px;
