@@ -4,20 +4,28 @@ Grey: #6e6b6e
 Purple: #692b7b
 */
 
+@font-face {
+  font-family: 'FulboFont';
+  /*src: url('web fonts/fulbo_argenta_macroman/fulbo-argenta-webfont.woff');*/
+  src: url(fulbo-argenta-webfont.woff) format('woff');
+}
+
+
 body{
   background-color: black;
   color: white;
-  /*font-family: Fulbo;*/
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h2{
   margin-bottom: 25px;
   font-size: 2.2rem;
-  font-style: italic;
+  font-family: FulboFont, Arial, Helvetica, sans-serif;
 }
 
 h3{
   margin-top: 10px;
+  font-family: FulboFont, Arial, Helvetica, sans-serif;
 }
 
 p{
@@ -38,8 +46,8 @@ hr{
   }
 
 .purple{
-  background-image: url("derby3_purple.jpg");
-  background-color: #692b7b;
+  /*background-image: url("derby3_purple.jpg");
+  background-color: #692b7b;*/
 }
 
 .info-card{
@@ -81,7 +89,8 @@ h1#title{
     padding-top: 50px;
     padding-bottom: clear;
     font-size: 4rem;
-    text-shadow: 2px 4px black;
+    /*text-shadow: 2px 4px black;*/
+    font-family: FulboFont, Arial, Helvetica, sans-serif;
 }
 
   h2#subtitle{
@@ -89,7 +98,8 @@ h1#title{
     padding-top: 25px;
     padding-bottom: 50px;
     font-size: 2.5rem;
-    text-shadow: 2px 4px black;
+    /*text-shadow: 2px 4px black;*/
+    font-family: FulboFont, Arial, Helvetica, sans-serif;
   }
 
 #title-card{
@@ -98,7 +108,7 @@ h1#title{
 }
 
 #title-card img{
-    width: 60%;
+    width: 50%;
 }
 
 /*#title-card img:hover{
@@ -151,13 +161,13 @@ h1#title{
 
 @media (min-width: 768px) {
   #title-card img{
-    width: 35%;
+    width: 30%;
   }
 }
 
 @media (min-width: 992px) {
   #title-card img{
-    width: 30%;
+    width: 25%;
   }
 }
 
