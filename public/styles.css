@@ -4,6 +4,11 @@ Grey: #6e6b6e
 Purple: #692b7b
 */
 
+:root{
+  --purple-colour: #692b7b;
+  --grey-colour: #6e6b6e;
+}
+
 @font-face {
   font-family: 'FulboFont';
   /*src: url('web fonts/fulbo_argenta_macroman/fulbo-argenta-webfont.woff');*/
@@ -12,6 +17,8 @@ Purple: #692b7b
 
 
 body{
+  margin:0;
+  padding:0;
   background-color: black;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -19,69 +26,175 @@ body{
 
 h2{
   margin-bottom: 25px;
+  margin-top: 25px;
   font-size: 2.2rem;
   font-family: FulboFont, Arial, Helvetica, sans-serif;
 }
 
 h3{
-  margin-top: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-family: FulboFont, Arial, Helvetica, sans-serif;
 }
 
 p{
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 hr{
   width: 25%;
   margin: auto;
+  margin-top: 25px;
   border: 2px solid white; /*#692b7b;*/
   border-radius: 2px;
 }
 
 
+details{
+  /*background-color: #303030;*/
+  color: #fff;
+  font-size: 1.5rem;
+  padding-top: 50px;
+}
+
+summary {
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: height 1s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after{
+  content: "\002B";
+}
+
+details[open] summary {
+    margin-bottom: .5em;
+    border-bottom: 1px solid #aaa;
+
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
+
+details[open] div{
+  /*padding: .5em 1em;*/
+  padding: 25px;
+  border-bottom: 1px solid #aaa;
+
+}
+
 
 .full-screen {
-  min-height: 100vh;
-  }
+ min-height: 100vh;
+}
+
+.align-vertical{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 .purple{
-  /*background-image: url("derby3_purple.jpg");
-  background-color: #692b7b;*/
+  /*background-image: url("derby3_purple.jpg"); */
+  background-color: var(--purple-colour);
+}
+
+.grey-button{
+  background-color: var(--grey-colour);
+  border-top: 5px solid whitesmoke;
+  border-right: 10px solid #4d4b4d;
+  border-bottom: 10px solid #4d4b4d;
+  border-left: 10px solid #4d4b4d;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.grey-button:hover{
+  background-color: #4d4b4d;
+  border-right: 10px solid whitesmoke;
+  border-bottom: 10px solid #4d4b4d;
+  border-left: 10px solid #4d4b4d;
+  color: aliceblue;
+}
+
+.grey-button:active{
+  background-color: white;
+  border-top: 8px solid var(--grey-colour);
+  border-right: 10px solid #4a046eff;
+  border-bottom: 7px solid whitesmoke;
+  border-left: 10px solid #4a046eff;
+  transition: 0.05s;
+}
+
+a.grey-button{
+  color: whitesmoke;
+}
+
+
+.btn{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .info-card{
-  padding-top: 10px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .info-card img{
-  margin-top: 20px;
-  margin-bottom: 10px;
-  width: 80%;
+  width: 100%;
 }
 
-  @media (min-width: 992px) {
-    .info-card img{
-      width: 100%;
-    }
-  }
+.info-card p{
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
-  .info-card h2{
-    padding: 20px;
-  }
+.info-card h2{
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
 
 .img-card{
     border-radius: 10px;
-    border: 3px solid #692b7b;
+    border: 3px solid var(--purple-colour);
 }
 
-.div-img{
-  background-image: url("derby2_3purple.jpg");
-  background-size: 150%;
-  background-repeat: no-repeat;
+@media (min-width: 768px) {
+  .info-card{
+    padding: 25px;
+  }
 
+  .info-card p{
+    padding: 0;
+  }
+
+  .info-card img{
+    border-radius: 10px;
+  }
 }
+
+/*.div-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-color: black;
+  background-image: url("derby2_tall.jpg");
+}*/
 
 /*HomePage*/
 h1#title{
@@ -89,26 +202,22 @@ h1#title{
     padding-top: 50px;
     padding-bottom: clear;
     font-size: 4rem;
-    /*text-shadow: 2px 4px black;*/
     font-family: FulboFont, Arial, Helvetica, sans-serif;
 }
 
   h2#subtitle{
     text-align: center;
     padding-top: 25px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     font-size: 2.5rem;
-    /*text-shadow: 2px 4px black;*/
     font-family: FulboFont, Arial, Helvetica, sans-serif;
   }
 
 #title-card{
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 #title-card img{
-    width: 50%;
+    width: 60%;
 }
 
 /*#title-card img:hover{
@@ -167,13 +276,13 @@ h1#title{
 
 @media (min-width: 992px) {
   #title-card img{
-    width: 25%;
+    width: 20%;
   }
 }
 
 @media (min-width: 1200px) {
   #title-card img{
-    width: 20%;
+    width: 15%;
   }
 }
 
@@ -189,16 +298,55 @@ h1#title{
 }
 
 
+.new-intake{
+  padding: 0px;
+}
+
+.new-intake-img{
+  margin-top: 25px;
+  width: 80%;
+  border-radius: 25px;
+}
+
+.new-intake p{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.new-intake h2{
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .new-intake{
+    padding: 25px;
+  }
+
+  .new-intake p{
+    padding: 0;
+  }
+
+  .new-intake-img{
+    width: 100%;
+  }
+
+  .new-intake div{
+    padding-bottom: 25px;
+  }
+}
+
+
 #junior-star{
   padding-top: 50px;
   font-size: 1rem;
 }
 
 .list-container {
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-top: 25px;
   text-align: center;
-  width: 90%;
+  width: 80%;
   margin: 10px auto 10px auto;
 }
 
@@ -208,6 +356,7 @@ h1#title{
   width: 100%; /*90%;*/
   max-width: 400px;
   margin: auto;
+  padding-top: 50px;
   overflow: hidden
 }
 
@@ -291,21 +440,22 @@ h1#title{
 }
 
 .social_icon, .menu, a:hover{
-    color: #692b7b;
+    color: grey;
 }
 
 /*Footer*/
 #footer-div{
- background-color: #692b7b;
- padding-top: 40px;
+ background-color: var(--purple-colour);
+ padding-top: 50px;
 }
 
   #footer-div .social_icon,
 #footer-div .menu {
-  position: relative;
+  /*position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
+  margin-right: 50px;
 }
 
 #footer-div .social_icon li,
@@ -338,12 +488,26 @@ h1#title{
   opacity: 1;
   color: #fff;
 }
+#footer-div hr{
+  width: 25%;
+  margin: auto;
+  margin-top: 50px;
+  border: 2px solid white;
+  border-radius: 2px;
+}
+
+#footer-div #designed-by{
+  margin: auto;
+  padding-top: 50px;
+  color: #ccc;
+}
 
 #footer-div #copyright{
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 0 10px;
   text-align: start;
-  color: #ccc;
+  color: rgb(160, 152, 152);
   opacity: 0.9;
-  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 5px;
 }
