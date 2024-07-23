@@ -299,7 +299,6 @@ h1#title{
 
 
 .new-intake{
-  padding: 0px;
 }
 
 .new-intake-img{
@@ -321,10 +320,13 @@ h1#title{
 @media (min-width: 768px) {
   .new-intake{
     padding: 25px;
+    padding-top: 50px;
+
   }
 
   .new-intake p{
     padding: 0;
+    padding-top: 25px;
   }
 
   .new-intake-img{
@@ -332,7 +334,7 @@ h1#title{
   }
 
   .new-intake div{
-    padding-bottom: 25px;
+    padding-bottom: 50px;
   }
 }
 
