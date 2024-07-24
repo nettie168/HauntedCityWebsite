@@ -206,6 +206,7 @@ a.grey-button{
 h1#title{
     text-align: center;
     padding-top: 25px;
+    padding-bottom: 0px;
     font-size: 4rem;
     font-family: FulboFont, Arial, Helvetica, sans-serif;
 }
