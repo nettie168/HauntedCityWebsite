@@ -10,32 +10,33 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-mainbg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand navbar-logo" href="/">
-          <!--<img class="Esk-logo" src=" ">  <!-- onError="this.onerror=null;this.src='/Esk-logo.png';">-->
+        <a class="navbar-brand" href="#">
           Haunted City</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
-          <i class="fas fa-bars text-purple"></i>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Our Teams
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Wraiths</a>
-                <a class="dropdown-item" href="#">Phantoms</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Terros</a>
-              </div>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Wraiths.html">Wraiths</a></li>
+                <li><a class="dropdown-item" href="Phantoms.html">Phantoms</a></li>
+                <li><a class="dropdown-item" href="Terrors.html">Terrors</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">Contact Us</a>
+              <a class="nav-link" href="NewSkaters.html">New Skaters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -55,41 +56,11 @@
             <h2 id="subtitle">Roller derby</h2>
         </div>
 
-        <div id="title-card">
-                <img class="img-fluid rotating" src="public/HauntedCityRollerDerbyCutOut.png">
-                <h3>York's local roller derby league</h3>
-            </div>
-      </div>
-
-        <!--<hr>-->
-
-
-
-        <!--<div class="container text-center" id="team-card">
-
-          <div class="row">
-            <h2>Our Teams</h2>
-
-            <div class="col-md-4">
-              <img class="img-fluid" src="public/HauntedCityRollerDerbyCutOut.png">
-              <h3>WRAITHS</h3>
-              <p>Our WFTDA aligned competing team, trans and non-binary inclusive (previously called Minxters).</p>
-            </div>
-            <div class="col-md-4">
-              <img class="img-fluid" src="public/HauntedCityRollerDerbyCutOut.png">
-              <h3>PHANTOMS</h3>
-              <p>Our Open to All (OTA) challenge team, an inclusive training programme for all genders (previously called Monsters).</p>
-            </div>
-            <div class="col-md-4">
-              <img class="img-fluid" src="public/HauntedCityRollerDerbyCutOut.png">
-              <h3>TERRORS</h3>
-              <p>Open to all young people aged 8 -17 years, no previous skating experience necessary*.</p>  
-            </div>
-
+        <div class="title-card">
+            <img class="img-fluid rotating" src="public/HauntedCityRollerDerbyCutOut.png">
+            <h3>York's local roller derby league</h3>
           </div>
-            <p id="junior-star">*<em>Junior skaters work through a programme of skills designed to help them progress safely and at their own pace, playing games at Levels 1, 2 and 3.</em></p>
-
-        </div>-->
+      </div>
 
         <div class="list-container full-screen">
           <div class="row">
@@ -126,16 +97,85 @@
           </div>
         </div>
         
-        <!--<hr>-->
-
         <div class="div-img">
 
         </div>
 
     </div>
 
+    <!--
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,500 L 0,93 C 88.25,84.17857142857143 176.5,75.35714285714286 304,64 C 431.5,52.642857142857146 598.25,38.74999999999999 741,49 C 883.75,59.25000000000001 1002.5,93.64285714285715 1115,105 C 1227.5,116.35714285714285 1333.75,104.67857142857142 1440,93 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="#692b7b" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,500 L 0,218 C 138.14285714285717,244.64285714285714 276.28571428571433,271.2857142857143 405,259 C 533.7142857142857,246.71428571428572 653.0000000000001,195.5 768,182 C 882.9999999999999,168.5 993.7142857142856,192.71428571428572 1105,205 C 1216.2857142857144,217.28571428571428 1328.1428571428573,217.64285714285714 1440,218 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="#692b7b" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-1"></path><path d="M 0,500 L 0,343 C 113.96428571428572,323.3571428571429 227.92857142857144,303.7142857142857 362,299 C 496.07142857142856,294.2857142857143 650.25,304.5 783,319 C 915.75,333.5 1027.0714285714287,352.28571428571433 1133,357 C 1238.9285714285713,361.71428571428567 1339.4642857142858,352.35714285714283 1440,343 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="#692b7b" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-2"></path></svg>
+  -->
 
-    <div class="container-fluid fullscreen text-center new-intake purple">
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+      .path-0{
+        animation:pathAnim-0 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes pathAnim-0{
+        0%{
+          d: path("M 0,500 L 0,93 C 101.89285714285714,103.53571428571428 203.78571428571428,114.07142857142857 316,118 C 428.2142857142857,121.92857142857143 550.75,119.25 667,122 C 783.25,124.75 893.2142857142858,132.92857142857144 1021,129 C 1148.7857142857142,125.07142857142857 1294.392857142857,109.03571428571428 1440,93 L 1440,500 L 0,500 Z");
+        }
+        25%{
+          d: path("M 0,500 L 0,93 C 110.32142857142858,83.57142857142857 220.64285714285717,74.14285714285714 345,89 C 469.35714285714283,103.85714285714286 607.7499999999999,143 720,134 C 832.2500000000001,125.00000000000001 918.3571428571429,67.85714285714286 1034,53 C 1149.642857142857,38.14285714285714 1294.8214285714284,65.57142857142857 1440,93 L 1440,500 L 0,500 Z");
+        }
+        50%{
+          d: path("M 0,500 L 0,93 C 139.39285714285714,67.67857142857143 278.7857142857143,42.35714285714286 386,58 C 493.2142857142857,73.64285714285714 568.25,130.25 698,135 C 827.75,139.75 1012.2142857142856,92.64285714285714 1145,77 C 1277.7857142857144,61.357142857142854 1358.8928571428573,77.17857142857143 1440,93 L 1440,500 L 0,500 Z");
+        }
+        75%{
+          d: path("M 0,500 L 0,93 C 156.78571428571428,92.67857142857143 313.57142857142856,92.35714285714286 423,101 C 532.4285714285714,109.64285714285714 594.5,127.25000000000001 712,115 C 829.5,102.74999999999999 1002.4285714285713,60.64285714285714 1133,52 C 1263.5714285714287,43.35714285714286 1351.7857142857142,68.17857142857143 1440,93 L 1440,500 L 0,500 Z");
+        }
+        100%{
+          d: path("M 0,500 L 0,93 C 101.89285714285714,103.53571428571428 203.78571428571428,114.07142857142857 316,118 C 428.2142857142857,121.92857142857143 550.75,119.25 667,122 C 783.25,124.75 893.2142857142858,132.92857142857144 1021,129 C 1148.7857142857142,125.07142857142857 1294.392857142857,109.03571428571428 1440,93 L 1440,500 L 0,500 Z");
+        }
+      }</style><path d="M 0,500 L 0,93 C 101.89285714285714,103.53571428571428 203.78571428571428,114.07142857142857 316,118 C 428.2142857142857,121.92857142857143 550.75,119.25 667,122 C 783.25,124.75 893.2142857142858,132.92857142857144 1021,129 C 1148.7857142857142,125.07142857142857 1294.392857142857,109.03571428571428 1440,93 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="#692b7b" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><style>
+      .path-1{
+        animation:pathAnim-1 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes pathAnim-1{
+        0%{
+          d: path("M 0,500 L 0,218 C 129.35714285714286,228.28571428571428 258.7142857142857,238.57142857142858 364,242 C 469.2857142857143,245.42857142857142 550.4999999999999,242.00000000000003 669,244 C 787.5000000000001,245.99999999999997 943.2857142857142,253.42857142857142 1078,250 C 1212.7142857142858,246.57142857142858 1326.357142857143,232.28571428571428 1440,218 L 1440,500 L 0,500 Z");
+        }
+        25%{
+          d: path("M 0,500 L 0,218 C 106.42857142857142,223.92857142857144 212.85714285714283,229.85714285714286 347,230 C 481.14285714285717,230.14285714285714 643.0000000000001,224.5 779,221 C 914.9999999999999,217.5 1025.142857142857,216.14285714285717 1131,216 C 1236.857142857143,215.85714285714283 1338.4285714285716,216.92857142857142 1440,218 L 1440,500 L 0,500 Z");
+        }
+        50%{
+          d: path("M 0,500 L 0,218 C 118.17857142857142,243.17857142857144 236.35714285714283,268.3571428571429 355,253 C 473.64285714285717,237.64285714285714 592.7499999999999,181.75 699,174 C 805.2500000000001,166.25 898.6428571428573,206.64285714285717 1020,222 C 1141.3571428571427,237.35714285714283 1290.6785714285713,227.67857142857142 1440,218 L 1440,500 L 0,500 Z");
+        }
+        75%{
+          d: path("M 0,500 L 0,218 C 99.78571428571428,200.92857142857144 199.57142857142856,183.85714285714286 314,188 C 428.42857142857144,192.14285714285714 557.4999999999999,217.5 675,235 C 792.5000000000001,252.5 898.4285714285716,262.1428571428571 1024,258 C 1149.5714285714284,253.85714285714286 1294.7857142857142,235.92857142857144 1440,218 L 1440,500 L 0,500 Z");
+        }
+        100%{
+          d: path("M 0,500 L 0,218 C 129.35714285714286,228.28571428571428 258.7142857142857,238.57142857142858 364,242 C 469.2857142857143,245.42857142857142 550.4999999999999,242.00000000000003 669,244 C 787.5000000000001,245.99999999999997 943.2857142857142,253.42857142857142 1078,250 C 1212.7142857142858,246.57142857142858 1326.357142857143,232.28571428571428 1440,218 L 1440,500 L 0,500 Z");
+        }
+      }</style><path d="M 0,500 L 0,218 C 129.35714285714286,228.28571428571428 258.7142857142857,238.57142857142858 364,242 C 469.2857142857143,245.42857142857142 550.4999999999999,242.00000000000003 669,244 C 787.5000000000001,245.99999999999997 943.2857142857142,253.42857142857142 1078,250 C 1212.7142857142858,246.57142857142858 1326.357142857143,232.28571428571428 1440,218 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="#692b7b" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-1"></path><style>
+      .path-2{
+        animation:pathAnim-2 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes pathAnim-2{
+        0%{
+          d: path("M 0,500 L 0,343 C 79.75,332.0357142857143 159.5,321.07142857142856 294,318 C 428.5,314.92857142857144 617.7499999999999,319.75 760,328 C 902.2500000000001,336.25 997.5,347.92857142857144 1103,351 C 1208.5,354.07142857142856 1324.25,348.5357142857143 1440,343 L 1440,500 L 0,500 Z");
+        }
+        25%{
+          d: path("M 0,500 L 0,343 C 123.53571428571428,334.17857142857144 247.07142857142856,325.35714285714283 367,327 C 486.92857142857144,328.64285714285717 603.2499999999999,340.75 724,354 C 844.7500000000001,367.25 969.9285714285716,381.64285714285717 1090,380 C 1210.0714285714284,378.35714285714283 1325.0357142857142,360.67857142857144 1440,343 L 1440,500 L 0,500 Z");
+        }
+        50%{
+          d: path("M 0,500 L 0,343 C 148.46428571428572,362.17857142857144 296.92857142857144,381.35714285714283 414,385 C 531.0714285714286,388.64285714285717 616.75,376.75 718,366 C 819.25,355.25 936.0714285714287,345.64285714285717 1059,342 C 1181.9285714285713,338.35714285714283 1310.9642857142858,340.67857142857144 1440,343 L 1440,500 L 0,500 Z");
+        }
+        75%{
+          d: path("M 0,500 L 0,343 C 123.39285714285714,329.7857142857143 246.78571428571428,316.57142857142856 374,325 C 501.2142857142857,333.42857142857144 632.2499999999999,363.50000000000006 758,372 C 883.7500000000001,380.49999999999994 1004.2142857142858,367.4285714285714 1117,359 C 1229.7857142857142,350.5714285714286 1334.892857142857,346.78571428571433 1440,343 L 1440,500 L 0,500 Z");
+        }
+        100%{
+          d: path("M 0,500 L 0,343 C 79.75,332.0357142857143 159.5,321.07142857142856 294,318 C 428.5,314.92857142857144 617.7499999999999,319.75 760,328 C 902.2500000000001,336.25 997.5,347.92857142857144 1103,351 C 1208.5,354.07142857142856 1324.25,348.5357142857143 1440,343 L 1440,500 L 0,500 Z");
+        }
+      }</style><path d="M 0,500 L 0,343 C 79.75,332.0357142857143 159.5,321.07142857142856 294,318 C 428.5,314.92857142857144 617.7499999999999,319.75 760,328 C 902.2500000000001,336.25 997.5,347.92857142857144 1103,351 C 1208.5,354.07142857142856 1324.25,348.5357142857143 1440,343 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="#692b7b" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-2"></path></svg>
+    
+      <div class="container-fluid fullscreen text-center new-intake purple">
 
       <div class="row">
 
@@ -146,28 +186,13 @@
           <h2>New Intake</h2>
 
           <div class="col-md-6 align-self-centre text-center">
-              <p>We run an adults New Intake session every June and January.</p>
+          
+              <p>We run an adults <a href="NewSkaters.html">New Intake</a> session every June and January.</p>
               <p>If you would like to join our brilliant roller derby team our next new intake programme will be in January 2025.</p>
-
-              <p><a class="grey-button btn" href="">More information here</a></p>
-
-              <!--<p>At Energise Leisure Centre, Acomb</p>
-              <p>The first new intake session: 12:30 - 13:15</p>
-              <p>All other sessions: 12:45 - 13:15</p>-->
         
           </div>
           
       </div>
-
-      <!--<p>For more information, and to secure a place, please contact</p>
-      <p>email</p>
-      <p>You can also get in touch with us on our socials:</p>
-
-      <ul class="social_icon">
-          <li><a href="https://www.facebook.com/yorkrollerderby"><ion-icon name="logo-facebook"></ion-icon></a></li>
-          <li><a href="https://x.com/York_Minxters"><ion-icon name="logo-twitter"></ion-icon></a></li>
-          <li><a href="https://www.instagram.com/yorkminxters/"><ion-icon name="logo-instagram"></ion-icon></a></li>
-      </ul>-->
 
   </div>
 
@@ -186,7 +211,7 @@
         <details>
           <summary>I haven't skated before, can I still join?</summary>
           <div>
-            Absolutely! Sign up for our <a href="">New Skate Intake</a>. We will teach you all the skills you need to skate and play roller derby. You don't even need your own skates, we can provide you with the skates and pads for your first 6 weeks.
+            Absolutely! Sign up for our <a href="">New Skate Intake</a>. We will teach you all the skills you need to skate and play roller derby. You don't even need your own skates, we can provide you with the skates and pads for your first intake.
           </div>
         </details>
 
@@ -217,7 +242,7 @@
                 <a class="nav-link" href="/teams">Teams</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/">Contact Us</a>
+                <a class="nav-link" href="/">Contact</a>
               </li>
             </ul> 
       
@@ -230,7 +255,7 @@
           <hr>
 
       <div class="container" id="designed-by">
-        <div class="row">
+        <div class="row"> 
           <div class="col-sm-6">
             <p>Website designed and created by Nettie A-B and the Social Media Team</p>
           </div>
