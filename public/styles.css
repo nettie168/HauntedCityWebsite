@@ -48,12 +48,45 @@ p{
   font-size: 1.2rem;
 }
 
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+/* unvisited link */
+p> a:link {
+  color: #ccc;
+}
+
+/* visited link */
+p > a:visited {
+  color: var(--grey-colour);
+}
+
+/* mouse over link */
+p > a:hover {
+  color: black;
+}
+
+/* selected link */
+p> a:active {
+  color: green;
+} 
+
 hr{
   width: 25%;
   margin: auto;
   margin-top: 25px;
+  margin-bottom: 25px;
   border: 2px solid white; /*#692b7b;*/
   border-radius: 2px;
+}
+
+ul{
+  list-style:inside;
+  list-style: none;
 }
 
 
@@ -113,12 +146,57 @@ details[open] div{
   background-color: var(--purple-colour);
 }
 
+.white-card{
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 12px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+}
+
+.white-card li{
+  font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  .white-card{
+    width: 80%;
+  }
+}
+
+.grey-card{
+  width: 90%;
+  background-color: var(--grey-colour);
+  color: white;
+  border-top: 5px solid whitesmoke;
+  border-right: 10px solid #4d4b4d;
+  border-left: 10px solid #4d4b4d;
+  border-bottom: 10px solid #4d4b4d;
+  padding: 25px;
+  margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+  .grey-card{
+    width: 60%;
+  }
+}
+
+.card hr{
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .header{
   background-image: url(HauntedCityRollerDerbyGhostCutOutPurpleTop.png);
   padding-bottom: 50px;
   margin-bottom: 25px;
 }
-
 
 .grey-button{
   background-color: var(--grey-colour);
@@ -164,43 +242,11 @@ a.grey-button{
   text-decoration: none;
 }
 
-.info-card{
-  padding-bottom: 50px;
+.wave-card{
+  margin: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
-.info-card img{
-  width: 100%;
-}
-
-.info-card p{
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.info-card h2{
-  padding-top: 50px;
-  padding-bottom: 25px;
-}
-
-.img-card{
-    border-radius: 10px;
-    border: 3px solid var(--purple-colour);
-}
-
-@media (min-width: 768px) {
-  .info-card{
-    padding: 25px;
-  }
-
-  .info-card p{
-    padding: 0;
-  }
-
-  .info-card img{
-    border-radius: 10px;
-  }
-}
-
 
 /*HomePage*/
 h1#title{
@@ -217,6 +263,40 @@ h2#subtitle{
   padding-bottom: 25px;
   font-size: 2.5rem;
   font-family: FulboFont, Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+  background-color: black;
+  color: #ccc;
+}
+
+.navbar-toggler{
+}
+
+.navbar{
+  background-color: black;
+  color: white;
+}
+
+.nav-link{
+color: white;
+}
+
+.nav-link:hover{
+color: var(--purple-colour);
+}
+
+.navbar-toggler{
+margin: 5px;
+}
+
+.navbar-toggler {
+border-color: white;
+}
+
+.bar-logo{
+  width: 50px;
+  margin-right: 25px;
 }
 
 .title-card img{
@@ -308,7 +388,6 @@ h2#subtitle{
 }
 
 .new-intake h2{
-  padding-top: 50px;
   padding-bottom: 25px;
 }
 
@@ -440,10 +519,47 @@ h2#subtitle{
     color: grey;
 }
 
+/*OurTeams*/
+.ourTeams a:hover{
+  color: white;
+}
+
+.team-img{
+  width: 60%;
+}
+
+@media (min-width: 576px) {
+  .team-img{
+    width: 100%;
+  }
+
+  .ourTeams{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/*Contact Us*/
+#contact-header h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
 /*Footer*/
 #footer-div{
  background-color: var(--purple-colour);
- padding-top: 50px;
 }
 
   #footer-div .social_icon,
@@ -458,6 +574,7 @@ h2#subtitle{
 #footer-div .social_icon li,
 #footer-div .menu li {
   list-style: none;
+  margin-bottom: 25px;
 }
 #footer-div .social_icon li a {
   font-size: 1.5em;
@@ -486,23 +603,23 @@ h2#subtitle{
   color: #fff;
 }
 #footer-div hr{
-  width: 25%;
+  width: 80%;
   margin: auto;
-  margin-top: 50px;
   border: 2px solid white;
   border-radius: 2px;
 }
 
 #footer-div #designed-by{
+  width: 80%;
   margin: auto;
-  padding-top: 50px;
+  padding: 25px 25px;
   color: #ccc;
 }
 
 #footer-div #copyright{
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0 10px;
-  text-align: start;
+  text-align: end;
   color: rgb(160, 152, 152);
   opacity: 0.9;
   padding-top: 50px;
@@ -510,16 +627,3 @@ h2#subtitle{
 }
 
 
-/*Contact Us*/
-.google-map {
-  padding-bottom: 50%;
-  position: relative;
-}
-
-.google-map iframe {
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-}
