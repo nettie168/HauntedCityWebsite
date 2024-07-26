@@ -32,8 +32,7 @@ h1{
 }
 
 h2{
-  margin-bottom: 25px;
-  margin-top: 25px;
+  padding: 25px;
   font-size: 2.2rem;
   font-family: FulboFont, Arial, Helvetica, sans-serif;
 }
@@ -172,9 +171,9 @@ details[open] div{
   width: 90%;
   background-color: var(--grey-colour);
   color: white;
-  border-top: 5px solid whitesmoke;
+  border-top: 10px solid white;
   border-right: 10px solid #4d4b4d;
-  border-left: 10px solid #4d4b4d;
+  border-left: 10px solid #ccc;
   border-bottom: 10px solid #4d4b4d;
   padding: 25px;
   margin-top: 25px;
