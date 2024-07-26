@@ -57,7 +57,7 @@ a{
 
 /* unvisited link */
 p> a:link {
-  color: #ccc;
+  color: white;
 }
 
 /* visited link */
@@ -388,14 +388,19 @@ border-color: white;
 }
 
 .new-intake h2{
+  margin-top: 50px;
   padding-bottom: 25px;
 }
 
 @media (min-width: 768px) {
   .new-intake{
-    padding: 25px;
     padding-top: 0px;
+    padding-bottom: 50px;
+  }
 
+  .new-intake h2{
+    margin-top: 0px;
+    padding-bottom: 25px;
   }
 
   .new-intake p{
@@ -407,9 +412,6 @@ border-color: white;
     width: 100%;
   }
 
-  .new-intake div{
-    padding-bottom: 50px;
-  }
 }
 
 
