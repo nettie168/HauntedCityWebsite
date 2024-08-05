@@ -130,6 +130,8 @@ details[open] div{
 }
 
 
+
+
 .full-screen {
  min-height: 100vh;
 }
@@ -191,6 +193,45 @@ details[open] div{
   margin-bottom: 25px;
 }
 
+.info-card, .info{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.info-card{
+  margin-bottom: 50px;
+}
+
+.info-card p{
+  font-size: 1.5rem;
+}
+
+.info-card-white{
+  background-color: rgb(229, 216, 231);
+  color: black;
+
+}
+
+@media (min-width: 768px) {
+  /*.info-card{
+    width: 75%;
+    margin: auto;
+    border-radius: 25px;
+    border: 2px solid var(--purple-colour);
+    margin-bottom: 50px;
+  }*/
+
+  .info-card p{
+    width: 70%;
+    margin: auto;
+  }
+
+  .info p{
+    width: 80%;
+    margin: auto;
+  }
+}
+
 .header{
   background-image: url(HauntedCityRollerDerbyGhostCutOutPurpleTop.png);
   padding-bottom: 50px;
@@ -198,6 +239,7 @@ details[open] div{
 }
 
 .grey-button{
+  padding: 10px;
   background-color: var(--grey-colour);
   border-top: 5px solid whitesmoke;
   border-right: 10px solid #4d4b4d;
@@ -226,6 +268,8 @@ details[open] div{
 
 a.grey-button{
   color: whitesmoke;
+  display: inline-block;
+  margin-top: 50px;
 }
 
 
@@ -384,10 +428,11 @@ border-color: white;
 .new-intake p{
   padding-left: 50px;
   padding-right: 50px;
+  font-size: 1.4rem;
 }
 
 .new-intake h2{
-  margin-top: 50px;
+  padding-top: 0px;
   padding-bottom: 25px;
 }
 
@@ -508,7 +553,13 @@ border-color: white;
     justify-content: center;
     align-items: center;
     list-style: none;
-    font-size: 1.4em;
+    font-size: 1em;
+}
+
+@media (min-width: 576px) {
+  .social_icon, .menu{
+    font-size: 1.4em;  
+  }
 }
 
 .social_icon, .menu, a{
